@@ -87,7 +87,7 @@ elif len(sys.argv) == 4:
     open(sys.argv[3], "wb+").write(bytes(b ^ otpdata[i] for i,b in enumerate(indata)))
 else:
     print("if /path/to/otp doesnt exist it will be created, otherwise it will be used as is")
-    print("if any file is empty it will be treated as non existant")
+    print("if any file is empty it will be treated as non existent")
     print("usage: ./otp.py /path/to/otp")
     print("\tif no additional files are specified stdin and stdout will be used")
     print("usage: ./otp.py /path/to/otp /operation/file")
